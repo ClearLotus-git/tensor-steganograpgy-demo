@@ -52,6 +52,12 @@ Compare the models:
 python src/compare.py
 ```
 
+Verify the model integrity and performance:
+
+```bash
+python verify.py
+```
+
 | Generated datasets and model files are excluded from version control.
 
 ## Results
