@@ -48,6 +48,38 @@ python src/compare.py
 
 | Generated datasets and model files are excluded from version control.
 
+## Results
+
+### Figure 1 — Baseline Model Training
+
+The baseline MNIST classifier is trained before any model parameters are modified.
+
+![Baseline Model Training](images/Base_Model_Training.png)
+
+### Figure 2 — Structured Metadata Embedded into Model Weights
+
+A structured research payload is encoded into the least-significant bits of selected `float32` parameters in `fc1.weight`.
+
+![Structured Metadata Embedded](images/Embedded.png)
+
+### Figure 3 — Recovery of Hidden Metadata from Model Weights
+
+The embedded metadata is successfully recovered directly from the modified model parameters.
+
+![Hidden Metadata Recovery](images/Extract.png)
+
+### Figure 4 — Parameter-Level Analysis of LSB Modifications
+
+A comparison of the clean and modified models shows the individual parameter changes introduced during embedding. The changes remain extremely small at the numerical level.
+
+![Parameter Comparison](images/Compare.png)
+
+### Figure 5 — Model Integrity and Performance Verification
+
+The clean and steganographic models are evaluated side-by-side. Although the model artifact and selected parameters have changed, both models retain the same classification accuracy and produce identical predictions across the MNIST test set.
+
+![Model Verification](images/Verify.png)
+
 
 
 
