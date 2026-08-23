@@ -92,7 +92,7 @@ The clean and steganographic models are evaluated side-by-side. Although the mod
 
 ![Model Verification](images/Verify.png)
 
-
+---
 
 
 
