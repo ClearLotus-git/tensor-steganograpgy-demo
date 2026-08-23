@@ -116,7 +116,7 @@ The same number of parameters modified during LSB embedding are deliberately cha
 
 The baseline, LSB-steganographic, and deliberately perturbed models are evaluated side-by-side. The LSB model preserves all 10,000 baseline predictions, while the larger perturbation results in 27 changed predictions and a small decrease in classification accuracy.
 
-![Three-Model Behavior Comparison](images/[Compare_models.png)
+![Three-Model Behavior Comparison](images/Compare_models.png)
 
 
 
