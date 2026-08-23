@@ -1,0 +1,8 @@
+{
+  "classification": "INTERNAL",
+  "artifact_id": "TSL-2026-0823-001",
+  "project": "TensorStego Research",
+  "model": "MNIST-MLP-v1",
+  "environment": "LAB",
+  "handling": "AUTHORIZED RESEARCH ONLY"
+}
