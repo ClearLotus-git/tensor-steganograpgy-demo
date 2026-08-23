@@ -55,7 +55,19 @@ python src/compare.py
 Verify the model integrity and performance:
 
 ```bash
-python verify.py
+python src/verify.py
+```
+
+Create a larger perturbation:
+
+```bash
+python src/stress_test.py
+```
+
+Compare all three models:
+
+```bash
+python src/compare_models.py
 ```
 
 | Generated datasets and model files are excluded from version control.
@@ -94,6 +106,17 @@ The clean and steganographic models are evaluated side-by-side. Although the mod
 
 ---
 
+### Figure 6 — Larger Parameter Perturbation
+
+The same number of parameters modified during LSB embedding are deliberately changed using a substantially larger numerical perturbation. This provides a comparison between microscopic LSB-level modifications and more aggressive changes to model weights.
+
+![Larger Parameter Perturbation](images/StressTest.png)
+
+### Figure 7 — Three-Model Behavior Comparison
+
+The baseline, LSB-steganographic, and deliberately perturbed models are evaluated side-by-side. The LSB model preserves all 10,000 baseline predictions, while the larger perturbation results in 27 changed predictions and a small decrease in classification accuracy.
+
+![Three-Model Behavior Comparison](images/[Compare_models.png)
 
 
 
