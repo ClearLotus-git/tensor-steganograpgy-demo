@@ -40,6 +40,12 @@ Embed the demonstration payload:
 python src/embed.py
 ```
 
+Extract: 
+
+```bash
+python /src/extract.py
+```
+
 Compare the models:
 
 ```bash
